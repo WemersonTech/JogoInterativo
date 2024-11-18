@@ -1,0 +1,184 @@
+Fase 1: Introdução à aritmética, operadores e tipos de dados
+Qual o operador usado para soma em C?
+
+Resposta correta: +
+Respostas erradas:
+-
+*
+%
+Quais são os tipos de dados numéricos em C?
+
+Resposta correta: int, float, double
+Respostas erradas:
+bool, char, string
+integer, double, real
+short, long, float32
+Qual a diferença entre int e float?
+
+Resposta correta: int armazena números inteiros, enquanto float armazena números com ponto flutuante.
+Respostas erradas:
+int armazena números decimais, e float armazena números inteiros.
+Ambos armazenam números inteiros.
+int armazena números negativos, e float armazena números positivos.
+O que faz o operador % em C?
+
+Resposta correta: Calcula o resto da divisão de dois números.
+Respostas erradas:
+Realiza a multiplicação entre dois números.
+Realiza a divisão inteira de dois números.
+Realiza a soma entre dois números.
+Como se declara uma variável char em C?
+
+Resposta correta: char letra = 'A';
+Respostas erradas:
+char letra = "A";
+char letra = A;
+char letra = 'A'[];
+Fase 2: Entrada e saída de dados, organização e modularidade
+Qual função é usada para imprimir uma mensagem na tela em C?
+
+Resposta correta: printf()
+Respostas erradas:
+print()
+out()
+echo()
+Como ler um número inteiro com scanf() em C?
+
+Resposta correta: scanf("%d", &variavel);
+Respostas erradas:
+scanf("%i", &variavel);
+scanf("%f", &variavel);
+scan("%d", variavel);
+Como criar uma função simples em C?
+
+Resposta correta:
+c
+Copiar código
+tipo_de_retorno nome_da_funcao(parâmetros) {
+    // código da função
+}
+Respostas erradas:
+nome_da_funcao() { // código da função }
+funcao(tipo_de_retorno nome_da_funcao(parâmetros));
+tipo_de_retorno { nome_da_funcao(parâmetros); }
+Qual é a importância da modularidade no código em C?
+
+Resposta correta: Facilita a organização do código e a reutilização de blocos de código.
+Respostas erradas:
+Aumenta o tempo de execução do código.
+Torna o código mais difícil de entender.
+Permite executar código sem necessidade de uma função principal.
+Fase 3: Vetores, matrizes e strings
+Como declarar um vetor de inteiros de tamanho 5 em C?
+
+Resposta correta: int v[5];
+Respostas erradas:
+int v = {5};
+int[5] v;
+int v[5, 5];
+Qual é a sintaxe para acessar o terceiro elemento de um vetor v em C?
+
+Resposta correta: v[2];
+Respostas erradas:
+v[3];
+v(3);
+v[1];
+Como declarar uma matriz 3x3 em C?
+
+Resposta correta: int m[3][3];
+Respostas erradas:
+int m[3];
+int m[3][5];
+int m[3, 3];
+Como manipular uma string em C?
+
+Resposta correta: Usando um array de caracteres, por exemplo, char nome[50];
+Respostas erradas:
+char nome = "Texto";
+string nome = "Texto";
+char nome[50]; nome = "Texto";
+Como calcular o tamanho de uma string em C?
+
+Resposta correta: strlen(string);
+Respostas erradas:
+size(string);
+sizeof(string);
+length(string);
+Fase 4: Ponteiros e estruturas
+Como declarar um ponteiro para um inteiro em C?
+
+Resposta correta: int *p;
+Respostas erradas:
+pointer int p;
+int &p;
+int p*;
+Qual a sintaxe para acessar o valor de uma variável através de um ponteiro?
+
+Resposta correta: *p;
+Respostas erradas:
+&p;
+p*;
+*p[];
+Como criar uma estrutura em C?
+
+Resposta correta:
+c
+Copiar código
+struct Nome {
+    tipo1 campo1;
+    tipo2 campo2;
+};
+Respostas erradas:
+struct Nome { campo1 tipo1, campo2 tipo2 };
+struct Nome campo1, campo2;
+struct Nome { campo1 tipo1, tipo2 campo2 };
+Como acessar um campo de uma estrutura em C?
+
+Resposta correta: estrutura.campo;
+Respostas erradas:
+estrutura[campo];
+estrutura->campo;
+campo.estrutura;
+O que é alocação dinâmica de memória?
+
+Resposta correta: Alocar memória em tempo de execução usando funções como malloc() e free().
+Respostas erradas:
+Alocar memória em tempo de compilação.
+Usar apenas o operador new para alocação de memória.
+Alocar memória automaticamente sem precisar de funções.
+Fase 5: Manipulação de arquivos e alocação dinâmica
+Como abrir um arquivo em modo leitura em C?
+
+Resposta correta: FILE *arq = fopen("nome_do_arquivo.txt", "r");
+Respostas erradas:
+FILE *arq = open("nome_do_arquivo.txt", "r");
+FILE arq = fopen("nome_do_arquivo.txt");
+FILE *arq = open("nome_do_arquivo.txt");
+Como escrever em um arquivo em C?
+
+Resposta correta: fprintf(arq, "Texto a ser escrito");
+Respostas erradas:
+write(arq, "Texto a ser escrito");
+fwrite("Texto a ser escrito", arq);
+print(arq, "Texto a ser escrito");
+Qual função é usada para alocar memória dinamicamente em C?
+
+Resposta correta: malloc()
+Respostas erradas:
+alloc()
+new()
+reserve()
+Como liberar memória alocada dinamicamente em C?
+
+Resposta correta: free(p);
+Respostas erradas:
+delete(p);
+dispose(p);
+dealloc(p);
+Como fechar um arquivo em C?
+
+Resposta correta: fclose(arq);
+Respostas erradas:
+close(arq);
+fend(arq);
+end(arq);
