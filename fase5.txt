@@ -1,0 +1,32 @@
+5
+Como abrir um arquivo em modo leitura em C?
+FILE *arq = fopen("nome_do_arquivo.txt", "r");
+FILE *arq = open("nome_do_arquivo.txt", "r");
+FILE arq = fopen("nome_do_arquivo.txt");
+FILE *arq = open("nome_do_arquivo.txt");
+0
+Como escrever em um arquivo em C?
+fprintf(arq, "Texto a ser escrito");
+write(arq, "Texto a ser escrito");
+fwrite("Texto a ser escrito", arq);
+print(arq, "Texto a ser escrito");
+0
+Qual função é usada para alocar memória dinamicamente em C?
+malloc()
+alloc()
+new()
+reserve()
+0
+Como liberar memória alocada dinamicamente em C?
+free(p);
+delete(p);
+dispose(p);
+dealloc(p);
+0
+Como fechar um arquivo em C?
+fclose(arq);
+close(arq);
+fend(arq);
+end(arq);
+0
+

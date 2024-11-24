@@ -1,0 +1,35 @@
+5
+Como declarar um ponteiro para um inteiro em C?
+int *p;
+pointer int p;
+int &p;
+int p*;
+0
+Qual a sintaxe para acessar o valor de uma variável através de um ponteiro?
+*p;
+&p;
+p*;
+*p[];
+0
+Como criar uma estrutura em C?
+struct Nome {
+    tipo1 campo1;
+    tipo2 campo2;
+};
+struct Nome { campo1 tipo1, campo2 tipo2 };
+struct Nome campo1, campo2;
+struct Nome { campo1 tipo1, tipo2 campo2 };
+0
+Como acessar um campo de uma estrutura em C?
+estrutura.campo;
+estrutura[campo];
+estrutura->campo;
+campo.estrutura;
+0
+O que é alocação dinâmica de memória?
+Alocar memória em tempo de execução usando funções como malloc() e free().
+Alocar memória em tempo de compilação.
+Usar apenas o operador new para alocação de memória.
+Alocar memória automaticamente sem precisar de funções.
+0
+
