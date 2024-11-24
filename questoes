@@ -1,0 +1,847 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+main()
+{
+	char resp,inicio;
+	char cert='s';
+	char nome[40];
+	int medio=0,facil=0,dificil=0,cont=0,nivel;
+	int certo_1=0,errado_1=0,contp_1=1,totp_1=1;
+	int certo_2=0,errado_2=0,contp_2=1,totp_2=1;
+	int certo_3=0,errado_3=0,contp_3=1,totp_3=1;
+	
+    printf("\n######### JOGO EM C #########\n");
+	printf ("\nInforme o nome do participante e em seguida pressione \"enter\".\n\n");
+	printf ("\nNOME DO PARTICIPANTE: ");
+	gets(nome);
+	system("cls");
+	printf ("\nSEJA BEM VINDO \"%s\"\n",nome);
+	printf ("-------------------------------------------------------------------------------\n");
+	printf ("Este e um jogo divertido de perguntas e respostas. O jogador devera escolher\n");
+	printf ("dentre as 4 alternativas apenas uma e em seguida pressionar \"enter\".\n\n");
+	printf ("O jogo possui 5 fases com diferentes conteudos sobre c:\n\n");
+	printf ("FASE 1 E 2  - Cada resposta certa valera 2 pontos\n");
+	printf ("FASE 3 E 4   - Cada resposta certa valera 4 pontos\n");
+	printf ("FASE 5 - Cada resposta certa valera 6 pontos\n");
+	printf ("-------------------------------------------------------------------------------\n");
+	printf ("Boa sorte e bom jogo\n\n");
+	printf ("Pressione \"enter\" para continuar...");
+	getchar();system ("cls");
+	dificuldade:
+	printf ("*-----------------------------*\n");
+	printf ("|    NIVEIS DE DIFICULDADE    |\n");
+	printf ("*-----------------------------*\n");
+	printf ("|  1 - NIVEL FACIL            |\n");
+	printf ("|  2 - NIVEL FACIL            |\n");
+	printf ("|  3 - NIVEL MEDIO            |\n");
+	printf ("|  4 - NIVEL MEDIO            |\n");
+	printf ("|  5 - NIVEL DIFICIL          |\n");
+	printf ("*-----------------------------*\n");
+	printf ("DESEJA JOGAR EM QUAL NIVEL? \n");
+	scanf ("%d",&nivel);
+	system("cls");
+	switch (nivel)
+	{
+		case 1 :
+		{
+			system("cls");
+			time_t tempo;struct tm *data;time(&tempo);
+			data = localtime(&tempo);
+		printf("*=============================================================================*\n");
+		printf("  FFFFF   AAAAA   SSSSS   EEEEE   U   U   M   M\n");
+        printf("  F       A   A   S       E       U   U   MM MM\n");
+        printf("  FFFF    AAAAA   SSSSS   EEEE    U   U   M M M\n");
+        printf("  F       A   A       S   E       U   U   M   M\n");
+        printf("  F       A   A   SSSSS   EEEEE   UUUUU   M   M\n");
+        printf("Fase 1: Introducao a aritmetica, operadores e tipos de dados\n");
+        printf("*=============================================================================*\n\n");
+        printf ("              AS PERGUNSTAS DA FASE 1 VALEM 2 PONTOS CADA\n\n");
+			
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Qual o operador usado para soma em C?\n");
+			printf ("A) -\n");
+			printf ("B) *\n");
+			printf ("C) +\n");
+			printf ("D) /\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"c\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Quais são os tipos de dados numéricos em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) bool, char, string\n");
+			printf ("B) int, float, double\n");
+			printf ("C) integer, double, real\n");
+			printf ("D) short, long, float32\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"c\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Qual a diferença entre int e float?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) int armazena números decimais, e float armazena números inteiros.\n");
+			printf ("B) Ambos armazenam números inteiros.\n");
+			printf ("C) int armazena números negativos, e float armazena números positivos.\n");
+			printf ("D) int armazena números inteiros, enquanto float armazena números com ponto flutuante.\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Qual é o tipo de dado adequado para armazenar a idade de uma pessoa em um programa de computador?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) int\n");
+			printf ("B) float\n");
+			printf ("C) char\n");
+			printf ("D) bool\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"A\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Como se declara uma variável char em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) char letra = '1'';\n");
+			printf ("B) char letra = A;\n");
+			printf ("C) char letra = 'A';\n");
+			printf ("D) char letra = 'A'[];\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_1++;
+			}
+				printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("As pergunstas deste nivel terminaram.\n");
+			printf ("Deseja jogar em outro nivel (s/n)? ");
+			scanf ("%s",&resp);
+			if ((resp=='s')||(resp=='S'))
+			{
+				system ("cls");
+				totp_1=contp_1;
+				contp_1=1;
+				goto dificuldade;
+			}
+			break;
+		}  
+			
+				case 2 :
+		{
+			system("cls");
+			time_t tempo;struct tm *data;time(&tempo);
+			data = localtime(&tempo);
+		printf("*=============================================================================*\n");
+		printf(" FFFFF  AAAAA  SSSSS  EEEEE      DDDDD   OOO   III  SSSSS\n");
+        printf(" F      A   A  S      E          D    D O   O   I   S\n");
+        printf(" FFFF   AAAAA  SSSSS  EEEE       D    D O   O   I   SSSSS\n");
+        printf(" F      A   A      S  E          D    D O   O   I      S\n");
+        printf(" F      A   A  SSSSS  EEEEE      DDDDD   OOO   III  SSSSS\n");
+        printf("Fase 2: Entrada e saída de dados, organização e modularidade");
+        printf("*=============================================================================*\n\n");
+
+			printf ("              AS PERGUNSTAS DA FASE VALEM 2 PONTOS CADA\n\n");
+			
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Qual função é usada para imprimir uma mensagem na tela em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) print()\n");
+			printf ("B) out()\n");
+			printf ("C) printf()\n");
+			printf ("D) echo()\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_1++;
+			}
+				printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Qual função é usada em C para ler uma cadeia de caracteres (string) do teclado?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) scanf()\n");
+			printf ("B) fgets()\n");
+			printf ("C) getchar()\n");
+			printf ("D) gets()\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("O que significa modularidade em programação?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Dividir o código em múltiplos arquivos\n");
+			printf ("B) Usar apenas uma função principal no código\n");
+			printf ("C) Escrever código sem comentários\n");
+			printf ("D) Organizar o código em funções e módulos para facilitar a manutenção e reutilização\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("O que é recomendado para manter um código organizado e legível?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Colocar todo o código na função main().\n");
+			printf ("B) Escrever código sem considerar a legibilidade para melhorar o desempenho.\n");
+			printf ("C) Usar funções pequenas e bem nomeadas, cada uma realizando uma tarefa específica.\n");
+			printf ("D) Evitar usar funções e organizar tudo como variáveis globais.\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Em C, qual é a principal vantagem de usar funções em um programa?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Reduzir o tempo de execução.\n");
+			printf ("B) Facilitar a leitura, organização e reutilização do código.\n");
+			printf ("C) Aumentar a complexidade do código.\n");
+			printf ("D) Fazer com que o código rode mais rápido.\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("As pergunstas deste nivel terminaram.\n");
+			printf ("Deseja jogar em outro nivel (s/n)? ");
+			scanf ("%s",&resp);
+			if ((resp=='s')||(resp=='S'))
+			{
+				system ("cls");
+				totp_1=contp_1;
+				contp_1=1;
+				goto dificuldade;
+			}
+			break;
+		}  
+		
+		/*Inicio do nível médiio*/
+		
+		case 3:
+		{
+			system("cls");
+		printf("*=============================================================================*\n");
+		printf(" FFFFF  AAAAA  SSSSS  EEEEE   TTTTTTT  RRRRR  EEEEE  SSSSS\n");
+        printf(" F      A   A  S      E          T     R    R E      S\n");
+        printf(" FFFF   AAAAA  SSSSS  EEEE       T     RRRRR  EEEE   SSSSS\n");
+        printf(" F      A   A      S  E          T     R   R  E          S\n");
+        printf(" F      A   A  SSSSS  EEEEE      T     R    R EEEEE  SSSSS\n");
+        printf("Fase 3: Vetores, matrizes e strings");
+        printf("*=============================================================================*\n\n");
+
+			printf ("              AS PERGUNSTAS DA FASE 3 VALEM 4 PONTOS CADA\n\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Como declarar um vetor de inteiros de tamanho 5 em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) int v = {5};\n");
+			printf ("B) int[5] v;\n");
+			printf ("C) int v[5];\n");
+			printf ("D) int v[5, 5];\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Qual é a sintaxe para acessar o terceiro elemento de um vetor v em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) v[3];\n");
+			printf ("B) v(3);\n");
+			printf ("C) v[1];\n");
+			printf ("D) v[2];\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_2++;
+			}
+				printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Como declarar uma matriz 3x3 em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) int m[3][3];\n");
+			printf ("B) int m[3];\n");
+			printf ("C) int m[3][5];\n");
+			printf ("D) int m[3, 3];\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"A\"\n");
+				errado_2++;
+			}
+				printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Como manipular uma string em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) char nome = 'Texto'';\n");
+			printf ("B) Usando um array de caracteres, por exemplo, char nome[50];\n");
+			printf ("C) string nome = 'Texto'';\n");
+			printf ("D) char nome[50]; nome = 'Texto'';\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Como calcular o tamanho de uma string em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) size(string);\n");
+			printf ("B) sizeof(string);\n");
+			printf ("C) strlen(string);\n");
+			printf ("D) length(string);\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("As pergunstas deste nivel terminaram.\n");
+			printf ("Deseja jogar em outro nivel (s/n)? ");
+			scanf ("%s",&resp);
+			if ((resp=='s')||(resp=='S'))
+			{
+				system ("cls");
+				totp_2=contp_2;
+				contp_2=1;
+				goto dificuldade;
+			}
+			break;
+		} 
+		
+			
+			case 4:
+		{
+			system("cls");
+			printf("*=============================================================================*\n");
+			printf(" FFFFF  AAAAA  SSSSS  EEEEE      QQQQQ  U   U  AAAAA  TTTTT  RRRRR  OOOOO\n");
+            printf(" F      A   A  S      E          Q    Q  U   U  A   A    T    R    R O   O\n");
+            printf(" FFFF   AAAAA  SSSSS  EEEE       Q    Q  U   U  AAAAA    T    RRRRR  O   O\n");
+            printf(" F      A   A      S  E          Q   QQ  U   U  A   A    T    R   R  O   O\n");
+            printf(" F      A   A  SSSSS  EEEEE      QQQQQ   UUUUU  A   A    T    R    R OOOOO\n");
+            printf("Fase 4: Ponteiros e estruturas");
+			printf("*=============================================================================*\n\n");
+			printf ("              AS PERGUNSTAS DA FASE 4 VALEM 4 PONTOS CADA\n\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Como declarar um ponteiro para um inteiro em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) pointer int p;\n");
+			printf ("B) int &p;\n");
+			printf ("C) int p*;\n");
+			printf ("D) int *p;\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Qual a sintaxe para acessar o valor de uma variável através de um ponteiro?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) &p;\n");
+			printf ("B) p*;\n");
+			printf ("C) *p[];\n");
+			printf ("D) *p;\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("O que é um ponteiro em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Uma variável que armazena um valor diretamente.\n");
+			printf ("B) Uma função que retorna o endereço de memória de uma variável.\n");
+			printf ("C) Uma variável que armazena o endereço de memória de outra variável.\n");
+			printf ("D) Uma variável que aponta para a primeira posição de um array.\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Como acessar um campo de uma estrutura em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) estrutura[campo];\n");
+			printf ("B) estrutura->campo;\n");
+			printf ("C) campo.estrutura;\n");
+			printf ("D) estrutura.campo;\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("O que é alocação dinâmica de memória?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Alocar memória em tempo de compilação.\n");
+			printf ("B) Alocar memória em tempo de execução usando funções como malloc() e free().\n");
+			printf ("C) Usar apenas o operador new para alocação de memória.\n");
+			printf ("D) Alocar memória automaticamente sem precisar de funções.\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("As pergunstas deste nivel terminaram.\n");
+			printf ("Deseja jogar em outro nivel (s/n)? ");
+			scanf ("%s",&resp);
+			if ((resp=='s')||(resp=='S'))
+			{
+				system ("cls");
+				totp_2=contp_2;
+				contp_2=1;
+				goto dificuldade;
+			}
+			break;
+		} 
+		
+		/* Inicio do nível difícil */
+		
+		case 5 :
+		{
+			system("CLS");
+			printf("*=============================================================================*\n");
+			printf(" FFFFF  AAAAA  SSSSS  EEEEE      CCCCC  III  N   N  CCCCC  OOOOO\n");
+            printf(" F      A   A  S      E          C      I   NN  N  C      O   O\n");
+            printf(" FFFF   AAAAA  SSSSS  EEEE       C      I   N N N  C      O   O\n");
+            printf(" F      A   A      S  E          C      I   N  NN  C      O   O\n");
+            printf(" F      A   A  SSSSS  EEEEE      CCCCC  III  N   N  CCCCC  OOOOO\n");
+            printf("Fase 5: Manipulação de arquivos e alocação dinâmica");
+			printf("*=============================================================================*\n\n");
+			printf ("            AS PERGUNSTAS DA FASE 5 VALEM 6 PONTOS CADA\n\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - FASE 5  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf ("Qual função é usada para alocar memória dinamicamente em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) malloc()\n");
+			printf ("B) alloc()\n");
+			printf ("C) new()\n");
+			printf ("D) reserve()\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"A\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - FASE 5  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf ("Como liberar memória alocada dinamicamente em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) delete(p);\n");
+			printf ("B) dispose(p);\n");
+			printf ("C) free(p);\n");
+			printf ("D) dealloc(p);\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - FASE 5  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf ("Como fechar um arquivo em C?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) fclose(arq);\n");
+			printf ("B) close(arq);\n");
+			printf ("C) fend(arq);\n");
+			printf ("D) end(arq);\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"A\"\n");
+				errado_3++;
+			}
+		
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - FASE 5  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf ("Qual função é usada para abrir um arquivo em C para leitura?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) open()\n");
+			printf ("B) fopen()\n");
+			printf ("C) file_open()\n");
+			printf ("D) openfile()\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - FASE 5  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf ("Após terminar de manipular um arquivo em C, qual função deve ser chamada para fechá-lo?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) close()\n");
+			printf ("B) fclose()\n");
+			printf ("C) file_close()\n");
+			printf ("D) endfile()\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("As pergunstas deste nivel terminaram.\n");
+			printf ("Deseja jogar em outro nivel (s/n)? ");
+			scanf ("%s",&resp);
+			if ((resp=='s')||(resp=='S'))
+			{
+				system ("cls");
+				totp_3=contp_3;
+				contp_3=1;
+				goto dificuldade;
+			}
+			break;
+		}
+		default : printf ("Nivel invalido\n");
+	}
+
+    return 0;
+} 
