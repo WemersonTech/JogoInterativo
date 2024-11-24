@@ -40,18 +40,23 @@
             transform: scale(0.95);
         }
     </style>
+    <script>
+        function redirecionar(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
 </head>
 <body>
-    <div>
-        <h1>C: Responda</h1>
-        <button onclick="window.location.href='iniciar.html'">
-            Iniciar Jogo
-        </button>
-        <br><br>
-        <button onclick="window.location.href='estatisticas.html'">
-            Estatísticas
-        </button>
-        <br><br>
-    </div>
+<div>
+    <h1>C: Responda</h1>
+    <button onclick="redirecionar('iniciar.html')">
+        Iniciar Jogo
+    </button>
+    <br><br>
+    <button onclick="redirecionar('estatisticas.html')">
+        Estatísticas
+    </button>
+    <br><br>
+</div>
 </body>
 </html>
