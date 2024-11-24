@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Principal</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, blue, purple);
+        }
+        div {
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #fff;
+        }
+        input {
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        button {
+            font-size: 20px;
+            background-color: white;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            text-align: left;
+            width: 150px;
+            transition: transform 0.2s ease;
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>C: Responda</h1>
+        <button onclick="window.location.href='iniciar.html'">
+            Iniciar Jogo
+        </button>
+        <br><br>
+        <button onclick="window.location.href='estatisticas.html'">
+            Estatísticas
+        </button>
+        <br><br>
+    </div>
+</body>
+</html>
